@@ -62,3 +62,7 @@ class FileStorage:
             obj_to_delete = str(obj._class.name_) + "." + str(obj.id)
             if obj_to_delete in self.__objects:
                 del self.__objects[obj_to_delete]
+
+    def close(self):
+        """deserialize json"""
+        self.reload()
