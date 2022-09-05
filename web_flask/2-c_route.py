@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """comment for the check"""
 
+
 from flask import Flask
 app = Flask(__name__)
 
@@ -15,6 +16,7 @@ def lobby():
 def home():
     """def home fun"""
     return ("HBNB")
+
 
 @app.route('/c/<text>', strict_slashes=False)
 def c_is_etc(text):
