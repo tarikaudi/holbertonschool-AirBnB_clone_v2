@@ -69,5 +69,5 @@ class FileStorage:
             pass
 
     def close(self):
-        """deserialize json""" 
+        """deserialize json"""
         self.reload()
