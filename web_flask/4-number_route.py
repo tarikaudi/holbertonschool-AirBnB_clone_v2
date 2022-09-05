@@ -16,17 +16,20 @@ def home():
     """def home fun"""
     return ("HBNB")
 
+
 @app.route('/c/<text>', strict_slashes=False)
 def c_text(text):
     """parse text __"""
     parse_text = text.replace('_', ' ')
     return "{}".format(parse_text)
 
+
 @app.route('/python')
 @app.route('/python/<text>', strict_slashes=False)
 def python_etc(text="is cool"):
     """python etc fun"""
     return ("Python {}".format(text.replace('_', ' ')))
+
 
 @app.route('/number/<int:n>', strict_slashes=False)
 def is_int(n):
