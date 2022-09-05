@@ -22,7 +22,7 @@ def home():
 def c_is_etc(text):
     """parse text __"""
     parse_text = text.replace('_', ' ')
-    return "{}".format(parse_text)
+    return "C {}".format(parse_text)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
